@@ -33,5 +33,5 @@
 		</table>
 		</form:form>
 		
-		<a href="viewemp">View Employee</a>
+		<a href="viewemp.jsp">View Employee</a>
 

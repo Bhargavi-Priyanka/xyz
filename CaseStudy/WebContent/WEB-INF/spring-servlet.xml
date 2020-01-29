@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns:context="http://www.springframework.org/schema/context"
@@ -18,7 +17,6 @@
 		<property name="prefix" value="/WEB-INF/views/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
-
 	<bean id="ds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
 		<property name="url" value="jdbc:oracle:thin:@Oracle02:1521:Xe"></property>
@@ -33,4 +31,6 @@
 	<bean id="dao" class="com.atos.model.EmployeeDao">
 		<property name="template" ref="jt"></property>
 	</bean>
-</beans>  
+	<bean id="dao1" class="com.atos.model.EmpLogDao">
+	<property name="template" ref="jt"></property></bean>
+	</beans>  

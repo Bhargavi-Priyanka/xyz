@@ -7,7 +7,7 @@
 <title>Index Page</title>
 </head>
 <body>
-	<a href="empform">Add Employee</a>
-	<a href="viewemp">view Employee</a>
+	<a href="empform.jsp">Add Employee</a>
+	<a href="viewemp.jsp">view Employee</a>
 </body>
 </html>

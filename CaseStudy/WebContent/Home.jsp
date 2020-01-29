@@ -34,10 +34,10 @@
 					<li><a href="EX.jsp"> Executive </a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="registration.jsp"> <span
+					<li><a href="registration"> <span
 							class="glyphican glyphican-user"></span>SignUp
 					</a></li>
-					<li><a href="login.jsp"> <span
+					<li><a href="login"> <span
 							class="glyphican glyphican-log-in"></span>Login
 					</a></li>
 				</ul>

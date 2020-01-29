@@ -20,13 +20,24 @@
  	<br><hr>
  	<b><h1 class="tag1"> Login </h1></b>
  <div align="center">
- 	<form action="" name="f1" method="post" onSubmit="validate_form()">
-		<label>Email ID: </label>
-		<input type="email" placeholder="Enter emailID" name="uname"><br><br>
-		<label>Password :</label>
-		<input type="text" placeholder="password" name="pwd"><br><br>
-		<button type="submit">Submit</button>
-	</form>
+ <form:form method="post" action="save">
+	<table>
+		<tr>
+			<td>Email :</td>
+			<td><form:input path="email" /></td>
+		</tr>
+		<tr>
+			<td>Password :</td>
+			<td><form:input path="password" /></td>
+		</tr>
+		
+		
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Save" /></td>
+		</tr>
+	</table>
+</form:form>
 </div>
 </body>
 </html>
