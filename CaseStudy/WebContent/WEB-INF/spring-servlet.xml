@@ -33,4 +33,6 @@
 	</bean>
 	<bean id="dao1" class="com.atos.model.EmpLogDao">
 	<property name="template" ref="jt"></property></bean>
+	
+	
 	</beans>  

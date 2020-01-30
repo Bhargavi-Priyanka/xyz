@@ -1,6 +1,4 @@
 package com.atos.controller;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.atos.model.EmpLogDao;
 import com.atos.model.EmpLogin;
-import com.atos.model.Employee;
 
 @Controller
 public class LoginController {
@@ -30,39 +27,94 @@ public class LoginController {
 
 	
 	@RequestMapping(value = "/lsave", method = RequestMethod.POST)
-	public String save(@ModelAttribute("log") EmpLogin log) {
+	public String lsave(@ModelAttribute("log") EmpLogin log) {
 		dao1.lsave(log);
 		return "redirect:/login";
 	}
 	 
+	
+	@RequestMapping("/login")
+	public String showform1(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "login";
+	}
+
+	
+	@RequestMapping(value = "/Login", method = RequestMethod.POST)
+	public String lsave1(@ModelAttribute("log") EmpLogin log) {
+		dao1.lsave1(log);
+		return "redirect:/index";
+	}
+	
+	@RequestMapping(value = "/Logine", method = RequestMethod.POST)
+	public String lsave11(@ModelAttribute("log") EmpLogin log) {
+		dao1.lsave11(log);
+		return "redirect:/index";
+	}
+	
+	
+	
 	@RequestMapping("/PM")
 	public String formShow(Model m) {
 		m.addAttribute("command", new EmpLogin());
-		return "PM";
+		return "redirect:/login";
 	}
 
 	
-	@RequestMapping(value = "/pmsave", method = RequestMethod.POST)
-	public String pmsave(@ModelAttribute("log") EmpLogin log) {
-		dao1.lsave(log);
-		return "redirect:/index";
+	/*@RequestMapping(value = "/pmsave", method = RequestMethod.POST)
+	public String pmsave1(@ModelAttribute("log") EmpLogin log) {
+		dao1.pmsave(log);
+	return "redirect:/login";
+	}*/
+	
+	
+	@RequestMapping("/LnD")
+	public String formShow2(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "LnD";
+	}
+
+	
+	@RequestMapping(value = "/lndsave", method = RequestMethod.POST)
+	public String lndsave(@ModelAttribute("log") EmpLogin log) {
+		dao1.lndsave(log);
+	return "redirect:/login";
+	}
+	
+	@RequestMapping("/EX")
+	public String formShow1(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "EX";
+	}
+
+	
+	@RequestMapping(value = "/exsave", method = RequestMethod.POST)
+	public String exsave(@ModelAttribute("log") EmpLogin log) {
+		dao1.exsave(log);
+	return "redirect:/login";
 	}
 	 
-	/*@RequestMapping("/login")
-	dao1.user(){
-		for( )
-		{
-			if(emailId==user.emailId && password==user.password)
-			{
-				return "redirect:/index";
-			}
-			else
-			{
-				System.out.println("incorrect");
-			}
-		}*/
+	@RequestMapping("/Contact")
+	public String formShow3(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "Contact";
+	}
+	@RequestMapping("/About")
+	public String formShow4(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "About";
+	}
+	@RequestMapping("/index")
+	public String formShow5(Model m) {
+		m.addAttribute("command", new EmpLogin());
+		return "index";
+	}
+
+
+	
+	
 	}
 
 	
 
-}
+

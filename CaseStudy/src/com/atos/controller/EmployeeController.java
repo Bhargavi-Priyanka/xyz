@@ -19,10 +19,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeDao dao;  // will inject dao from XML file
 
-	/*
-	 * "command" is a reserved request attribute
-	 *  which is used to display object data into form
-	 */
+	
 	@RequestMapping("/empform")
 	public String showform(Model m) {
 		m.addAttribute("command", new Employee());

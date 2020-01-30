@@ -29,9 +29,9 @@
 
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="Home.jsp"> Home </a></li>
-					<li><a href="PM.jsp"> Project manager </a></li>
-					<li><a href="LnD.jsp"> Learning and Development </a></li>
-					<li><a href="EX.jsp"> Executive </a></li>
+					<li><a href="PM"> Project manager </a></li>
+					<li><a href="LnD"> Learning and Development </a></li>
+					<li><a href="EX"> Executive </a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="registration"> <span
@@ -73,8 +73,7 @@
 				web and user interface components.</p>
 		</div>
 	</div>
-	<a href="empform">Add Employee</a>
-	<a href="viewemp">view Employee</a>
+	
 	<footer align="center" style="font-size:15px">
 	<p>
 		<b>Copyright@2019</b>

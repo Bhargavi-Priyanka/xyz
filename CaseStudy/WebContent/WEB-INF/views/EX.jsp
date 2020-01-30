@@ -1,3 +1,4 @@
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
 <html>
@@ -6,11 +7,21 @@
 <title>Index</title>
 <link href="ext.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="bootstrap.css">
-<script src="bootstrap.js"></script>
-<script src="jquery.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+	integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+	crossorigin="anonymous"></script>
 </head>
 <body>
+<form:form method="post" action="Logine" >
+
 	<div class="wrapper">
 		<div class="container-fluid">
 			<nav class="navbar navbar-inverse">
@@ -20,9 +31,9 @@
 					</div>
 
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="login.jsp"> Login </a></li>
-						<li><a href="About.jsp"> About </a></li>
-						<li><a href="Contact.jsp"> Contact Us </a></li>
+						<li class="active"><a href="login"> Login </a></li>
+						<li><a href="About"> About </a></li>
+						<li><a href="Contact"> Contact Us </a></li>
 					</ul>
 				</div>
 			</nav>
@@ -60,6 +71,7 @@
 			</div>
 		</div>
 	</div>
+	</form:form>
 	<footer align="center" style="font-size:15px">
 		<p><b>Copyright@2019</b></p>
 	</footer>

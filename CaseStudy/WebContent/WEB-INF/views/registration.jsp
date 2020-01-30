@@ -29,10 +29,9 @@
 					</div>
 
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="registration.jsp">
-								Registration </a></li>
-						<li><a href="About.jsp"> About </a></li>
-						<li><a href="Contact.jsp"> Contact Us </a></li>
+					
+						<li><a href="About"> About </a></li>
+						<li><a href="Contact"> Contact Us </a></li>
 					</ul>
 				</div>
 			</nav>
@@ -78,14 +77,17 @@
 			<td><input type="submit" value="Save" /></td>
 		</tr>
 	</table>
+	<a href="login">Login</a>
 	
 						</div>
 					</div>
 				</form>
+				
 			</div>
 		</div>
 	</div>
 	</form:form>
+	
 <footer align="center" style="font-size:15px">
 		<p><b>Copyright@2019</b></p>
 	</footer>
